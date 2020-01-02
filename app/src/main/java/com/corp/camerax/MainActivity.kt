@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() ,LifecycleOwner
     private lateinit var viewFinder: TextureView
     private fun startCamera() {
         val previewConfig = PreviewConfig.Builder().apply {
-            setTargetResolution(Size(1080, 920))
+            setTargetResolution(Size(1920, 1080))
         }.build()
         val preview = Preview(previewConfig)
         preview.setOnPreviewOutputUpdateListener {
